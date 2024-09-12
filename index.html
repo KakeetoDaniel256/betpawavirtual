@@ -22,6 +22,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header and Navigation */
 header {
     background-color: #00b140;
     padding: 1rem 0;
@@ -36,11 +37,12 @@ header {
 nav ul {
     list-style: none;
     margin: 1rem 0;
+    padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    display: inline-block;
+    margin: 0 0.5rem;
 }
 
 nav ul li a {
@@ -48,6 +50,7 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Hero Section */
 .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     height: 80vh;
@@ -55,37 +58,39 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 1rem;
 }
 
 .hero-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-button {
     background-color: #00b140;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
+/* Benefits Section */
 .benefits {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
     background-color: #fff;
     color: #000;
 }
 
 .benefits h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .benefit-cards {
@@ -100,10 +105,14 @@ nav ul li a {
     padding: 1rem;
     border: 2px solid #00b140;
     border-radius: 10px;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
 }
 
+/* Accounts Section */
 .accounts {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
@@ -119,6 +128,9 @@ nav ul li a {
     padding: 1rem;
     border: 2px solid #00b140;
     border-radius: 10px;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
 }
 
 .buy-button {
@@ -131,8 +143,9 @@ nav ul li a {
     border-radius: 5px;
 }
 
+/* Contact Section */
 .contact {
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
     background-color: #fff;
     color: #000;
@@ -140,18 +153,83 @@ nav ul li a {
 
 .whatsapp-button {
     background-color: #25D366;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 2rem 0;
     background-color: #00b140;
 }
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .benefit-cards, .account-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit, .account {
+        max-width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .whatsapp-button, .buy-button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+    }
+
+    .benefits h2 {
+        font-size: 1.5rem;
+    }
+}
+        
     </style>
 <body>
     <header>
